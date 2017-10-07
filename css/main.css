@@ -22,7 +22,53 @@ h1, h2 {
   text-align: center;
 }
 
-.graphic,
+.graphic {
+  margin: 1em auto;
+  width: 30%;
+  display: block;
+}
+
+.star-point,
+.outer-circle {
+  opacity:0;
+}
+
+.inner-circle {
+  stroke-opacity: 0;
+}
+
+.star {
+  stroke-width: 8;
+}
+
+@media only screen and (min-width: 30em){
+  .inner-circle {
+    stroke-opacity:1;
+  }
+}
+
+@media only screen and (min-width: 40em){
+  .outer-circle {
+    stroke-opacity:1;
+    opacity: 1;
+  }
+
+  .star {
+    stroke-width:4;
+  }
+}
+
+@media only screen and (min-width: 64em){
+  .star-point {
+    opacity:1;
+  }
+}
+
+/*.outer-circle {
+  fill: pink;
+}*/
+
+/*.graphic,
 .graphic-with-text {
   margin: 1em auto;
   width: 20%;
@@ -32,4 +78,4 @@ h1, h2 {
   color: #FFF;
   background: transparent url('../img/star.svg') left top no-repeat;
   height: 200px;
-}
+}*/
